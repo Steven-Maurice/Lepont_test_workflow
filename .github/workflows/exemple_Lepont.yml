@@ -1,9 +1,11 @@
-on: push
+on:
+  push:
+    branches: [ "main" ]
 
 jobs:
   hello:
     runs-on: ubuntu-latest
-    
     steps:
-      -run: echo "hello Lepont"      
+      - name: write something
+        run: echo "hello Lepont"      
       
